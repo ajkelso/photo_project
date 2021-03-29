@@ -18,6 +18,10 @@ class Api::V1::UsersController < ApplicationController
         end
     end
 
+    def profile
+        renderjson: { user: current_user }, status: :accepted
+    end
+
     private
 
     def user_params

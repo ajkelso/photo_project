@@ -6,6 +6,13 @@ class Api::V1::GalleriesController < ApplicationController
     end
 
     def create 
+        @gallery = Gallery.create(gallery_params)
+        if @gallery.valid?
+            #create photos
+            
+        else
+            render json: { message: 'Gallery was not created'} status: :not_accaptable
+        end
 
     end
 

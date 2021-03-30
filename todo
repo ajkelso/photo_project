@@ -3,4 +3,4 @@ AUTH:
 -user data can be stored in app state & token stored client side?
 -confirm the dotenv secrets are working
 
-
+-add proper catch to profile, login

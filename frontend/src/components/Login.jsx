@@ -24,8 +24,7 @@ function Login() {
 
     return(
         <div>
-            <p>{localStorage.getItem('jwt')}</p>
-
+           
             <p>Login Below </p>
 
             <form onSubmit={handleSubmit}>

@@ -7,7 +7,7 @@ const loginHeaders = {
 }
 
 export function loginRequest(credentials) {
-    fetch(URL + 'api/v1/login', {
+    return fetch(URL + 'api/v1/login', {
         method: "POST",
         headers: loginHeaders,
         body: JSON.stringify(credentials)
